@@ -22,7 +22,7 @@ with st.sidebar:
 
             st.success("CSV file uploaded successfully!")
             # Set up the database and the agent using the temporary CSV file
-            engine = setup_database(csv_path, 'retail_sales')
+            engine = setup_database(csv_path, uploaded_file.name)
             if not gemini_api_key:
                 st.warning('Please enter your API key!', icon='⚠')
                 st.stop()
