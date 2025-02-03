@@ -42,14 +42,14 @@ def setup_database(csv_path: str, db_name: str) -> object:
     return engine
 
 
-def setup_agent(engine: object) -> tuple:
+def setup_agent(engine: object, api_key : str) -> tuple:
     """Sets up the SQL agent along with the callback logger. Returns the agent_executor and query_logger."""
     query_logger = SQLQueryLogger()
     callback_manager = CallbackManager([query_logger])
     # Initialize the SQL database interface
     db = SQLDatabase(engine=engine)    
     # Set up the language model
-    llm = ChatGoogleGenerativeAI(model="gemini-2.0-flash-exp", temperature=0, google_api_key=os.environ["GOOGLE_API_KEY"])
+    llm = ChatGoogleGenerativeAI(model="gemini-2.0-flash-exp", temperature=0, google_api_key=api_key)
     # llm = ChatOllama(model="sqlcoder", temperature=0)
 
     # system_message = SystemMessagePromptTemplate.from_template(
