@@ -17,3 +17,5 @@ pip install -r requirements.txt
 
 streamlit run ChatSQLApp.py
 ```
+## Blog Post:
+https://medium.com/@anandthirwani/text-to-sql-ai-agent-in-less-than-10-lines-of-code-09b6d7e3cb41
