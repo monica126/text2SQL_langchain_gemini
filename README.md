@@ -19,3 +19,4 @@ streamlit run ChatSQLApp.py
 ```
 ## Blog Post:
 https://medium.com/@anandthirwani/text-to-sql-ai-agent-in-less-than-10-lines-of-code-09b6d7e3cb41
+https://medium.com/@mandarangchekar7/getting-started-building-your-first-sql-database-agent-with-langchain-bc8b45a9ba70
