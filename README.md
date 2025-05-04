@@ -8,8 +8,8 @@ To run this repository, ensure you have the following:
 
 ## Setup
 ```bash
-git clone https://github.com/AnandThirwani8/Agentic-AI-Driven-Chat-with-SQL-Database.git
-cd Agentic-AI-Driven-Chat-with-SQL-Database
+git clone https://github.com/monica126/text2SQL_langchain_gemini.git
+cd text2SQL_langchain_gemini
 
 conda create --name Text2SQL python=3.10
 conda activate Text2SQL
